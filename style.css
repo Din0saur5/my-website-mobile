@@ -1,0 +1,172 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the banner */
+.banner {
+    background-color: #da2424; /* Background color for the banner */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 20px; /* Add spacing around the text */
+}
+
+.banner h1 {
+    font-size: 36px; /* Adjust the font size */
+}
+
+.banner p {
+    font-size: 18px; /* Adjust the font size */
+}
+
+/* hamburger menu */
+.hamburger-menu{
+    position: fixed; /* Fixed position at the top-left corner */
+    top: 20px; /* Adjust the vertical position */
+    left: 20px; /* Adjust the horizontal position */
+    cursor: pointer;
+}
+.hamburger-menu img{
+    position: fixed; /* Fixed position at the top-left corner */
+    top: 30px; /* Adjust the vertical position */
+    left: 30px; /* Adjust the horizontal position */
+    cursor: pointer;
+}
+
+
+/* Dropdown menu styles */
+.drop-menu {
+    display: none; /* Initially hide the dropdown menu */
+    position: absolute;
+    top: 0px; /* Adjust the vertical position below the hamburger menu */
+    left: 0px; /* Adjust the horizontal position */
+    background-color: #fff; /* Background color of the dropdown */
+    box-shadow: 10px 9px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the dropdown */
+    padding: 35px; /* Add spacing inside the dropdown */
+    padding-right: 35px;
+    z-index: 1; /* Ensure the dropdown appears above other content */
+    
+}
+/* Style the menu list */
+.menu-list {
+    list-style: none; 
+    padding: 0;
+    width: 100%;
+    margin-left: -35px;
+    margin-block-start: 30px;
+}
+
+/* Style the menu items */
+.menu-item {
+
+    width: 210px;
+    padding: 10px 10px;
+    text-align: right;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+    
+    
+}
+.menu-list a{
+    color:#ffffff;
+    text-decoration: none;
+
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+/* Hover effect */
+.menu-item:hover {
+    opacity: 0.8;
+}
+
+#menu-exit-button{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #da2424;
+   
+    
+}
+
+
+
+
+/* Mobile responsiveness: Expand the menu to full screen on small screens */
+@media (max-width: 768px) {
+
+    
+
+    .hamburger-menu {
+        position: fixed; /* Fixed position at the top-left corner */
+        top: 20px; /* Adjust the vertical position */
+        left: 20px; /* Adjust the horizontal position */
+        cursor: pointer;
+        
+    }
+
+    /* Show the dropdown menu when the hamburger menu is clicked on mobile */
+    .drop-menu {
+        position: fixed;
+        width: 100%;
+        height: 80%;
+        top: 12%;
+        left: 0;
+        
+    }
+    img#menu-exit-button{
+        
+        position:fixed;
+        top: 20px;
+        left: 10px;
+        border: 20px solid #fff ;
+        border-top:10px solid #fff ;
+        border-bottom: 25px solid #ffffff;
+        padding:0;
+        box-shadow: none;
+        
+    }
+    
+    .menu-list{
+        margin-top: 40px;
+        font-size: 28px;
+       
+        margin-left: 15%;
+
+    }
+    
+    .menu-item{
+        text-align: center;
+    }
+}
+
+
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 28px; /* Adjust the font size for smaller screens */
+        margin-inline-start: 25%;
+    }
+    .banner p {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+        margin-inline-start: 25%;
+    }
+}
