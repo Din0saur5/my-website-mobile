@@ -170,3 +170,40 @@ body, h1, p {
         margin-inline-start: 25%;
     }
 }
+/*-----------global page headings-----*/
+
+h2 {
+    text-align: right;
+    margin-right: 5%;
+}
+
+main{
+    position: relative;
+    border: 5px solid;
+    margin: 20px;
+    margin-left: 60px;
+    height: 700px;
+    z-index: -1;
+}
+/* ----------welcome page  */
+#profile-pic{
+    width:15%;
+    margin-left: 15%;
+    border: 5px solid #da2424;
+    position: absolute;
+    top: 5%;
+}
+p.about-text{
+    position:inherit;
+    margin-left: 32%;
+    top:32%;
+    word-wrap: normal;
+
+}
+
+@media (max-width: 768px){
+
+    img#profile-pic{
+        width:50%
+    }
+}
