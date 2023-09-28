@@ -17,7 +17,7 @@ body, h1, p {
 }
 
 .banner p {
-    font-size: 18px; /* Adjust the font size */
+    font-size: 24px; /* Adjust the font size */
 }
 
 /* hamburger menu */
@@ -184,11 +184,13 @@ main{
     margin-left: 60px;
     height: 1000px;
     z-index: -1;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* ----------welcome page  */
 #profile-pic{
     width:25%;
-    margin-left: 15%;
+    margin-left: 12%;
     border: 5px solid #da2424;
     position: absolute;
     top: 2%;
@@ -200,17 +202,19 @@ main{
     margin-right: 2%;
     line-height: 1.8;
     word-wrap: normal;
-    float:right;
+    
 }
 
 @media (max-width: 768px){
     main{
         height: 2000px;
+        font-size: 16px;
     }
 
 
     img#profile-pic{
-        width:70%
+        width:70%;
+        margin-left:0;
     }
     p.about-text{
         top: 16%;
