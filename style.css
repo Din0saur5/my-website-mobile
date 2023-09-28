@@ -182,33 +182,38 @@ main{
     border: 5px solid;
     margin: 20px;
     margin-left: 60px;
-    height: 700px;
+    height: 1000px;
     z-index: -1;
 }
 /* ----------welcome page  */
 #profile-pic{
-    width:15%;
+    width:25%;
     margin-left: 15%;
     border: 5px solid #da2424;
     position: absolute;
-    top: 5%;
+    top: 2%;
 }
 .about-text{
-    position:inherit;
-    margin-left: 32%;
-    top:32%;
-
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 42%;
+    margin-right: 2%;
+    line-height: 1.8;
     word-wrap: normal;
-
+    float:right;
 }
 
 @media (max-width: 768px){
+    main{
+        height: 2000px;
+    }
+
 
     img#profile-pic{
-        width:50%
+        width:70%
     }
     p.about-text{
-        top: 40%;
+        top: 16%;
         margin-left: 5%;
     }
 }
