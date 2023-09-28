@@ -193,10 +193,11 @@ main{
     position: absolute;
     top: 5%;
 }
-p.about-text{
+.about-text{
     position:inherit;
     margin-left: 32%;
     top:32%;
+
     word-wrap: normal;
 
 }
@@ -205,5 +206,9 @@ p.about-text{
 
     img#profile-pic{
         width:50%
+    }
+    p.about-text{
+        top: 40%;
+        margin-left: 5%;
     }
 }
