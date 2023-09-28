@@ -217,3 +217,14 @@ main{
         margin-left: 5%;
     }
 }
+/*-----------------portfolio*/
+.portfolio-text{
+    margin: 15px;
+    
+}
+#portfolio-links{
+    position: absolute;
+    bottom:5px;
+    left: 5px;
+    cursor: pointer;
+}
