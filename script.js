@@ -10,3 +10,4 @@ menuExit.addEventListener('click', function () {
     dropDown.style.display = 'none';
     
 });
+

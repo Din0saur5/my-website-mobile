@@ -34,9 +34,59 @@
         <p>Software Engineer</p>
     </header>
     <h2><u>Contact</u></h2>
-    <div class="main">
+    
     <!-- embed emailer add instagram, discord, linkedin links, also just email -->
-    </main>
+    <section class="contact-form">
+        <div class="form-container">
+            <h2><u>Get in Touch:</u></h2>
+            <form onsubmit="sendEmail(); reset(); return false;">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+        
+    </section>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            <span><a href="www.linkedin.com/in/daniel-hackworth-58620a291"><img src="./resources/linkedin_icon.png"></a></span> &nbsp;
+            <span><a href="www.instagram.com/daniel_hackworth/"><img src="./resources/instagram_icon.png"></a></span>
+           <br>Discord: dinosaur5<br>
+            Phone: <a href="tel:12033996902">203-399-6902</a><br>
+            Email: <a href="mailto:danielhackworth515@gmail.com">danielhackworth515@gmail.com</a>
+        </address>
+    </section>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){ 
+            console.log("called");
+            Email.send({
+            
+                Host : "smtp.gmail.com",
+                Username : "danielhackworth515@gmail.com",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
