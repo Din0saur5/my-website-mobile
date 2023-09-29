@@ -30,6 +30,7 @@ body, h1, p {
     top: 20px; /* Adjust the vertical position */
     left: 20px; /* Adjust the horizontal position */
     cursor: pointer;
+    z-index: 1000;
 }
 .hamburger-menu img{
     position: fixed; /* Fixed position at the top-left corner */
@@ -49,7 +50,7 @@ body, h1, p {
     box-shadow: 10px 9px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the dropdown */
     padding: 35px; /* Add spacing inside the dropdown */
     padding-right: 35px;
-    z-index: 5; /* Ensure the dropdown appears above other content */
+    z-index: 1; /* Ensure the dropdown appears above other content */
     
 }
 /* Style the menu list */
@@ -133,6 +134,7 @@ body, h1, p {
         height: 80%;
         top: 12%;
         left: 0;
+        
         
     }
     img#menu-exit-button{
@@ -291,6 +293,12 @@ figure{
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
+    display: inherit;
+    margin-top: 15px;
+    position: inherit;
+}
+span{
+    display: inline-block;
 }
 
 /* Contact info styles */
@@ -321,6 +329,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+    z-index: index;
 }
 
 .gallery-slide {
