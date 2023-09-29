@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./resources/favicon_water.png">
     <title>Photo Gallery</title>
 </head>
-<body style="border: 20px solid rgba(0, 0, 255, 0.897);">
+<body style="border: 20px solid rgb(64, 111, 241);">
     
     <div class="hamburger-menu">
         <img id="plain-burger" src="./resources/closed_burger.png"/>
    
         <div class="drop-menu">
-            <img id="menu-exit-button" style="background-color: rgba(0, 0, 255, 0.897);" src="./resources/hollow_burger.png"/>
+            <img id="menu-exit-button" style="background-color: rgb(64, 111, 241);" src="./resources/hollow_burger.png"/>
             <ul class="menu-list">
                 
                 <a class="menu" href="./index.html"><li class="menu-item red">Home</li></a>
@@ -29,14 +30,27 @@
     </div>
 
     <!-- Banner -->
-    <header class="banner" style="background-color: rgba(0, 0, 255, 0.897);">
+    <header class="banner" style="background-color: rgb(64, 111, 241);">
         <h1>Daniel Hackworth</h1>
         <p>Software Engineer</p>
     </header>
     <h2><u>Photo Gallery</u></h2>
-    <div class="main">
+    
     <!-- pick 8 photos with some ease out hover captions -->
-    </main>
+    <div class="gallery-container">
+        <div class="gallery-slide">
+            <img src="image1.jpg" alt="Image 1">
+            <div class="caption">Caption for Image 1</div>
+        </div>
+        <div class="gallery-slide">
+            <img src="image2.jpg" alt="Image 2">
+            <div class="caption">Caption for Image 2</div>
+        </div>
+        <!-- Add more images and captions as needed -->
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
