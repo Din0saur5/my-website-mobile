@@ -81,7 +81,7 @@ body, h1, p {
 }
 
 .red {
-    background-color: red;
+    background-color: #da2424;
 }
 
 .blue {
@@ -183,7 +183,7 @@ h2 {
 
 div.main{
     position: relative;
-    border: 5px solid;
+    
     margin: 20px;
     margin-left: 60px;
     height: 1200px;
@@ -223,7 +223,7 @@ figure{
 
     img#profile-pic{
         position: absolute;
-        width:100px;
+        width:150px;
        margin: 0px;
     ;
     }
@@ -237,11 +237,12 @@ figure{
 /*-----------------portfolio*/
 .portfolio-text{
     margin: 15px;
+    padding-bottom: 30px;
     
 }
-#portfolio-links{
-    position: relative;
-    bottom:100px;
-    left: 100px;
-    cursor: pointer;
+.github{
+    position: fixed;
+    bottom:0px;
+    z-index: -1;
+    
 }
