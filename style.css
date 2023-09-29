@@ -193,11 +193,15 @@ div.main{
 }
 /* ----------welcome page  */
 #profile-pic{
+    position: absolute;
     width:25%;
     margin-left: 12%;
     border: 5px solid #da2424;
-    position: absolute;
+    float: left;
     top: 2%;
+}
+figure{
+    float: left;
 }
 .about-text{
     position: absolute;
@@ -206,6 +210,7 @@ div.main{
     margin-right: 2%;
     line-height: 1.8;
     word-wrap: normal;
+    align-items: end;
     
 }
 
@@ -217,14 +222,16 @@ div.main{
 
 
     img#profile-pic{
-        width:90%;
-       margin: 5px;
+        position: absolute;
+        width:100px;
+       margin: 0px;
     ;
     }
     p.about-text{
         position: absolute;
         bottom: 2px;
-        margin-left: 5%;
+       top: 300px;
+       margin-left: 10px;
     }
 }
 /*-----------------portfolio*/
