@@ -49,7 +49,7 @@ body, h1, p {
     box-shadow: 10px 9px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the dropdown */
     padding: 35px; /* Add spacing inside the dropdown */
     padding-right: 35px;
-    z-index: 1; /* Ensure the dropdown appears above other content */
+    z-index: 5; /* Ensure the dropdown appears above other content */
     
 }
 /* Style the menu list */
@@ -243,6 +243,6 @@ figure{
 .github{
     position: fixed;
     bottom:0px;
-    z-index: -1;
+    z-index: 0;
     
 }
