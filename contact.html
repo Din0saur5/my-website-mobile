@@ -39,7 +39,7 @@
     <section class="contact-form">
         <div class="form-container">
             <h2><u>Get in Touch:</u></h2>
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form onsubmit="alert('Sorry, STMP currently not operational'); reset(); return false;">
  
                 <label for="name">Name: </label>
                 <input type="text" id="name" name="name" required>
@@ -68,7 +68,7 @@
         </address>
     </section>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail(){ 
             console.log("called");
@@ -86,7 +86,14 @@
             );
         }
     
-    </script>
+    </script>-->
+    <script>
+        $("#submit").click(function() {
+           alert("STMP not currently operational");
+           reset();
+           return false;
+        });
+     </script>
     <script src="script.js"></script>
 </body>
 </html>
