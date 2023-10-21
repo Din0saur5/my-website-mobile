@@ -242,11 +242,20 @@ figure{
     padding-bottom: 30px;
     
 }
-.github{
+.portfolio-resources{
     position: fixed;
     bottom:0px;
     z-index: 0;
-    
+    display: flex;
+    width: 100%;
+   
+     
+}
+.portfolio-resources a{
+    padding-right: 2%;
+}
+#blog-icon{
+    border-bottom: solid 15px black;
 }
 
 /*---------------contact*/
